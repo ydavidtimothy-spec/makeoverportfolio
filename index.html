@@ -8,14 +8,18 @@
 <link rel="icon" href="public/logo-y-cool.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="css/bits.css">
+<script>(function(){try{var t=localStorage.getItem('yoro-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
 <nav class="nav-fixed" aria-label="Primary">
   <div class="nav-island">
     <a class="nav-brand" href="#top"><img src="public/logo-y-cool.svg" alt="Yoro logo" width="30" height="30" onerror="this.style.display='none'">David Yoro</a>
     <div class="nav-links">
-      <a href="#proof">Proof</a><a href="#method">Method</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <a href="#proof">Proof</a><a href="#stack">Stack</a><a href="#method">Method</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
     </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark mode" aria-pressed="false" title="Toggle theme">◐</button>
   </div>
 </nav>
 
@@ -29,10 +33,10 @@
         <a class="star-btn" href="https://calendly.com/ydavidtimothy/30min"><span class="star-btn-inner">Book intro</span></a>
       </div>
       <div class="proof-row" aria-label="Results">
-        <div class="proof-item"><span class="proof-value accent mono" data-count-up="20">20</span><span class="proof-label">Hours saved / wk</span></div>
-        <div class="proof-item"><span class="proof-value mono">&lt;25s</span><span class="proof-label">Speed-to-lead</span></div>
-        <div class="proof-item"><span class="proof-value mono">90%</span><span class="proof-label">Auto-response rate</span></div>
-        <div class="proof-item"><span class="proof-value mono">100%</span><span class="proof-label">CRM sync accuracy</span></div>
+        <div class="proof-item"><span class="proof-value accent mono" data-count-up="20">20</span><span class="proof-label">Hours Saved / Wk</span></div>
+        <div class="proof-item"><span class="proof-value mono">&lt;25s</span><span class="proof-label">Speed-to-Lead</span></div>
+        <div class="proof-item"><span class="proof-value mono">90%</span><span class="proof-label">Auto-Response Rate</span></div>
+        <div class="proof-item"><span class="proof-value mono">100%</span><span class="proof-label">CRM Sync Accuracy</span></div>
       </div>
     </div>
     <div class="portrait-wrap">
@@ -50,49 +54,87 @@
     <span class="eyebrow mono">Proof of work</span>
     <h2 class="h-section">Shipped automations, not mockups</h2>
     <p class="lede">Each card is a real client system: problem, build, measured result. Images are the actual workflow captures.</p>
-    <div class="work-grid">
-      <article class="work-card rise">
+    <div class="chips" role="group" aria-label="Filter proof by platform">
+      <button class="chip" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" data-filter="n8n" aria-pressed="false">n8n</button>
+      <button class="chip" data-filter="zapier" aria-pressed="false">Zapier</button>
+      <button class="chip" data-filter="ghl" aria-pressed="false">GHL</button>
+    </div>
+    <div class="work-grid" id="work-grid">
+      <article class="work-card rise" data-cat="n8n">
         <img src="public/assets/images/ai-lead-enrichment-DFLJxv40.webp" alt="Lead enrichment pipeline" loading="lazy" onerror="this.style.display='none'">
         <div class="work-body"><span class="work-cat mono">n8n · Apollo · Firecrawl</span>
         <h3 class="work-title">Autonomous Lead-to-Revenue Engine</h3>
         <p class="work-desc">Multi-agent qualification: scrape, enrich, score, sync 500+ prospects monthly.</p>
         <span class="work-metric">95% less manual research</span></div>
       </article>
-      <article class="work-card rise" data-delay="60">
+      <article class="work-card rise" data-delay="60" data-cat="zapier">
         <img src="public/assets/images/closed-loop-lead-conversion-1.png" alt="Closed-loop lead conversion" loading="lazy" onerror="this.style.display='none'">
         <div class="work-body"><span class="work-cat mono">Zapier · Apollo</span>
         <h3 class="work-title">Closed-Loop Lead Conversion</h3>
         <p class="work-desc">Webhook enrichment triggering SMS and email in under 25 seconds.</p>
         <span class="work-metric">&lt;25s response · +25% conversion</span></div>
       </article>
-      <article class="work-card rise" data-delay="120">
+      <article class="work-card rise" data-delay="120" data-cat="ghl">
         <img src="public/assets/images/ghl-clubworx-integration.png" alt="GHL ClubWorx integration" loading="lazy" onerror="this.style.display='none'">
         <div class="work-body"><span class="work-cat mono">GoHighLevel · API sync</span>
         <h3 class="work-title">GHL + ClubWorx Member Experience</h3>
         <p class="work-desc">Two-way sync bridging lead funnels to member roster with auto onboarding.</p>
         <span class="work-metric">-90% admin overhead</span></div>
       </article>
-      <article class="work-card rise">
+      <article class="work-card rise" data-cat="n8n">
         <img src="public/assets/images/ai-customer-service-agent-C3SpdCXM.webp" alt="AI customer service agent" loading="lazy" onerror="this.style.display='none'">
         <div class="work-body"><span class="work-cat mono">n8n · LLM + memory</span>
         <h3 class="work-title">AI Customer Service Agent</h3>
         <p class="work-desc">Context-aware agent with persistent memory for 24/7 inquiries.</p>
         <span class="work-metric">90% auto-resolution</span></div>
       </article>
-      <article class="work-card rise" data-delay="60">
+      <article class="work-card rise" data-delay="60" data-cat="zapier">
         <img src="public/assets/images/content-repurposing-v1.png" alt="Content repurposing pipeline" loading="lazy" onerror="this.style.display='none'">
         <div class="work-body"><span class="work-cat mono">Zapier · Whisper</span>
         <h3 class="work-title">Autonomous Content Repurposing</h3>
         <p class="work-desc">Audio transcripts to threads and newsletters, distributed automatically.</p>
         <span class="work-metric">4h → 15min turnaround</span></div>
       </article>
-      <article class="work-card rise" data-delay="120">
+      <article class="work-card rise" data-delay="120" data-cat="ghl">
         <img src="public/assets/images/ghl-reactivation.png" alt="Dormant lead reactivation" loading="lazy" onerror="this.style.display='none'">
         <div class="work-body"><span class="work-cat mono">GoHighLevel · Nurture</span>
         <h3 class="work-title">Dormant Lead Reactivation</h3>
         <p class="work-desc">60-day inactive detection with multi-touch value drops.</p>
         <span class="work-metric">25% reactivated to calls</span></div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="architecture" style="padding-top:0">
+  <div class="container">
+    <span class="eyebrow mono">Architecture</span>
+    <h2 class="h-section">One pipeline pattern, reused</h2>
+    <p class="lede">Every system above follows the same shape: capture, enrich, decide, sync. Example from the lead engine — <a href="alre.html" style="color:var(--accent)">full ALRE breakdown</a>.</p>
+    <div class="flow">
+      <div class="flow-step"><div class="flow-num mono">01</div><h3 class="flow-name">Capture</h3><p class="flow-desc">Forms, calls, sheets. Webhook in &lt;25s.</p></div>
+      <div class="flow-step"><div class="flow-num mono">02</div><h3 class="flow-name">Enrich</h3><p class="flow-desc">Firecrawl scrape + Apollo verified emails.</p></div>
+      <div class="flow-step"><div class="flow-num mono">03</div><h3 class="flow-name">Decide</h3><p class="flow-desc">LLM tiering, objection trees, routing.</p></div>
+      <div class="flow-step"><div class="flow-num mono">04</div><h3 class="flow-name">Sync</h3><p class="flow-desc">CRM fields, tasks, SMS loops. No copy-paste.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="stack" style="padding-top:0">
+  <div class="container">
+    <span class="eyebrow mono">Tool stack</span>
+    <h2 class="h-section">Eight tools, production-proven</h2>
+    <p class="lede">The exact stack behind the proof above. No logos for tools never shipped.</p>
+    <div class="stack-grid">
+      <div class="stack-card"><div class="stack-tier mono">Voice engine</div><h3 class="stack-name">Telnyx AI &amp; VAPI</h3><p class="stack-desc">Outbound telephony, objection trees, live transfers.</p></div>
+      <div class="stack-card"><div class="stack-tier mono">Orchestration</div><h3 class="stack-name">n8n Self-Hosted</h3><p class="stack-desc">Branches, webhooks, state, vector stores.</p></div>
+      <div class="stack-card"><div class="stack-tier mono">Automation</div><h3 class="stack-name">Make.com</h3><p class="stack-desc">Scenarios, mapping, error handlers.</p></div>
+      <div class="stack-card"><div class="stack-tier mono">CRM / Ops</div><h3 class="stack-name">GoHighLevel (GHL)</h3><p class="stack-desc">Pipelines, SMS/voice, booking engine.</p></div>
+      <div class="stack-card"><div class="stack-tier mono">Extraction</div><h3 class="stack-name">Firecrawl API</h3><p class="stack-desc">LLM-ready structured scraping.</p></div>
+      <div class="stack-card"><div class="stack-tier mono">Enrichment</div><h3 class="stack-name">Apollo API</h3><p class="stack-desc">Verified emails, phones, revenue tiering.</p></div>
+      <div class="stack-card"><div class="stack-tier mono">LLM inference</div><h3 class="stack-name">ChatGPT Models &amp; OpenAI</h3><p class="stack-desc">JSON outputs, embeddings, vision parse.</p></div>
+      <div class="stack-card"><div class="stack-tier mono">SIP / trunking</div><h3 class="stack-name">Twilio Telephony</h3><p class="stack-desc">Numbers, routing, SMS callbacks.</p></div>
     </div>
   </div>
 </section>
@@ -108,6 +150,29 @@
       <div class="flow-step"><div class="flow-num mono">03</div><h3 class="flow-name">Build</h3><p class="flow-desc">n8n / Zapier / GHL, credentials vaulted.</p></div>
       <div class="flow-step"><div class="flow-num mono">04</div><h3 class="flow-name">Verify</h3><p class="flow-desc">Live run with your data. Metrics recorded.</p></div>
       <div class="flow-step"><div class="flow-num mono">05</div><h3 class="flow-name">Handoff</h3><p class="flow-desc">Docs, Loom, 14-day fix window.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="voice" style="padding-top:0">
+  <div class="container">
+    <div class="voice rise">
+      <div>
+        <span class="eyebrow mono">Voice AI</span>
+        <h2 class="h-section">Cold calls handled, humans close</h2>
+        <p class="lede" style="margin-bottom:0">End-to-end voice agent on Telnyx AI: 34+ objection handlers, voicemail SMS loops, instant warm transfers. 85% of calls need no human until the prospect is warm.</p>
+      </div>
+      <div>
+        <ul class="voice-list">
+          <li>34+ objection handlers, sub-second responses</li>
+          <li>Real-time qualification triggers</li>
+          <li>Voicemail drops with SMS recovery loops</li>
+          <li>Live warm transfer to your closers</li>
+        </ul>
+        <div class="contact-actions" style="justify-content:flex-start;margin-top:24px">
+          <a class="btn btn-primary" href="https://calendly.com/ydavidtimothy/30min">Hear it live</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -157,6 +222,6 @@
     <span><a href="https://www.linkedin.com/in/david-yoro-2082b32a1/">LinkedIn</a><a href="https://www.upwork.com/freelancers/~01940039609a004629?mp_source=share">Upwork</a></span>
   </div>
 </footer>
-<script type="module">import{initCountUp,initRise}from"./js/bits.js";initCountUp();initRise();</script>
+<script type="module">import{initCountUp,initRise,initFilter,initProgress,initGlow,initTheme}from"./js/bits.js";initCountUp();initRise();initFilter();initProgress();initGlow();initTheme();</script>
 </body>
 </html>

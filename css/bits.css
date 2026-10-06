@@ -1,11 +1,11 @@
 /* Lightweight bits — no React, no framer-motion. Ported from haziel-next bits. */
-.shiny-text{display:inline-block;color:var(--muted,#a3a3a3);background:linear-gradient(120deg,transparent 40%,rgba(255,255,255,.85) 50%,transparent 60%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;animation:shine-sweep 5.5s linear infinite}
+.shiny-text{display:inline-block;color:var(--muted,#a3a3a3);background:linear-gradient(120deg,transparent 40%,var(--shine,rgba(255,255,255,.85)) 50%,transparent 60%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;animation:shine-sweep 5.5s linear infinite}
 @keyframes shine-sweep{0%{background-position:120% 0}100%{background-position:-120% 0}}
 .rise{opacity:0;transform:translateY(.4em);transition:opacity .45s cubic-bezier(.16,1,.3,1),transform .45s cubic-bezier(.16,1,.3,1)}
 .rise.in{opacity:1;transform:none}
 .star-btn{position:relative;display:inline-flex;border-radius:9999px;padding:1.5px;overflow:hidden;text-decoration:none;isolation:isolate}
 .star-btn::before{content:"";position:absolute;inset:0;border-radius:inherit;background:conic-gradient(from var(--star-angle,0deg),transparent 0 68%,var(--accent,#c5ff41) 86%,transparent 100%);animation:star-spin 4s linear infinite}
 @keyframes star-spin{to{--star-angle:360deg}}
-.star-btn-inner{position:relative;z-index:1;display:inline-flex;align-items:center;background:var(--accent,#c5ff41);color:#0b0b0b;font-size:14px;font-weight:600;padding:13px 26px;border-radius:inherit}
+.star-btn-inner{position:relative;z-index:1;display:inline-flex;align-items:center;background:var(--accent,#c5ff41);color:var(--accent-ink,#0b0b0b);font-size:14px;font-weight:600;padding:13px 26px;border-radius:inherit}
 .spotlight{position:relative;overflow:hidden}
 @media (prefers-reduced-motion:reduce){.shiny-text,.star-btn::before{animation:none}.rise{opacity:1;transform:none;transition:none}}
