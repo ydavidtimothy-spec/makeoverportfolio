@@ -1,0 +1,246 @@
+{
+ "profile": {
+ "name": "David Timothy Yoro",
+ "role": "Automation Workflow Specialist",
+ "location": "Davao City · Remote (Serving US & Canadian Clients)",
+ "email": "ydavidtimothy@gmail.com",
+ "phone": "+63 963 975 9929",
+ "linkedin": "https://www.linkedin.com/in/david-yoro-2082b32a1/",
+ "upwork": "https://www.upwork.com/freelancers/~01940039609a004629?mp_source=share",
+ "calendly": "https://calendly.com/ydavidtimothy/30min",
+ "bio": "I architect enterprise-grade AI outbound calling engines, multi-agent enrichment systems, and seamless CRM integrations using Telnyx AI, n8n, Make, GoHighLevel, and Twilio — saving 20+ hours weekly and converting cold leads into warm transfers."
+ },
+ "stats": [
+ {"value": "20+", "label": "Hours Saved / Wk"},
+ {"value": "<25s", "label": "Speed-to-Lead"},
+ {"value": "90%", "label": "Auto-Response Rate"},
+ {"value": "100%", "label": "CRM Sync Accuracy"}
+ ],
+ "projects": [
+ {
+ "id": "alre",
+ "title": "Autonomous Lead-to-Revenue Engine (ALRE)",
+ "category": "n8n",
+ "tags": ["n8n", "ChatGPT Models", "Firecrawl", "Apollo"],
+ "image": "assets/images/ai-lead-enrichment-DFLJxv40.webp",
+ "desc": "Multi-agent qualification pipeline combining Firecrawl scraping, Apollo API enrichment, multi-stage LLM scoring, and automatic CRM synchronization.",
+ "problem": "Sales teams spent 15+ hours weekly researching raw leads, leading to slow speed-to-lead and lost opportunities.",
+ "solution": "Built a multi-agent workflow using n8n, Firecrawl for website scraping, Apollo API for enrichment, and ChatGPT Models for lead tiering.",
+ "result": "Automated 500+ monthly prospects with a 95% reduction in manual research time.",
+ "metrics": "95% Time Saved"
+ },
+ {
+ "id": "voice-ai",
+ "title": "End-to-End AI Voice Agent & CRM System",
+ "category": "make",
+ "tags": ["Make", "Telnyx AI", "Twilio", "GHL"],
+ "image": "assets/images/make-retell-voice-ai-DADmKj4A.png",
+ "desc": "High-fidelity conversational AI agent with 34+ objection handlers, real-time qualification triggers, voicemail SMS loops, and instant warm sales transfers.",
+ "problem": "Manual cold outbound calls suffered from high rep fatigue, slow follow-ups, and inconsistent qualification criteria.",
+ "solution": "Deployed Telnyx AI with 34+ objection handlers, Make.com webhook routing, and automatic CRM field synchronizers.",
+ "result": "Achieved 85% automated call handling with instant live warm transfers to human closers.",
+ "metrics": "85% Call Efficiency"
+ },
+ {
+ "id": "ghl-clubworx",
+ "title": "GHL + ClubWorx Unified Member Experience",
+ "category": "ghl",
+ "tags": ["GoHighLevel", "ClubWorx", "API Sync"],
+ "image": "assets/images/ghl-clubworx-integration.png",
+ "desc": "Hybrid enterprise integration bridging lead funnels with member management, automating onboarding credential delivery and removing 90% admin overhead.",
+ "problem": "Disjointed lead acquisition in GHL versus student roster in Clubworx caused duplicated data and manual admin chaos.",
+ "solution": "Engineered a two-way API sync and automated student onboarding credential dispatcher.",
+ "result": "Eliminated duplicate data entries and saved 90% of recurring operational time.",
+ "metrics": "-90% Admin Overhead"
+ },
+ {
+ "id": "ai-customer",
+ "title": "AI Customer Service Agent",
+ "category": "n8n",
+ "tags": ["n8n", "ChatGPT Models", "Webhooks"],
+ "image": "assets/images/ai-customer-service-agent-C3SpdCXM.webp",
+ "desc": "Context-aware conversational agent with vector search & persistent memory for 24/7 client inquiries.",
+ "problem": "High volume of recurring inquiries left customers waiting hours during off-peak windows.",
+ "solution": "Created an n8n webhook workflow with Google ChatGPT Models (OpenAI) and persistent session memory.",
+ "result": "Reached 90% automated query resolution in under 3 seconds with zero human delay.",
+ "metrics": "90% Auto-Reply"
+ },
+ {
+ "id": "youtube-shorts",
+ "title": "Auto YouTube Shorts Creator",
+ "category": "n8n",
+ "tags": ["n8n", "AI Video", "YouTube API"],
+ "image": "assets/images/auto-youtube-shorts-DlBD9La4.webp",
+ "desc": "Automated prompt synthesis, video generation, captioning, and multi-platform publishing.",
+ "problem": "Creating high-frequency video content required tedious editing and manual publishing across platforms.",
+ "solution": "Built an n8n pipeline that synthesizes script prompts, generates AI video assets, and posts automatically.",
+ "result": "Scaled output from 2 to 15 quality short-form videos weekly.",
+ "metrics": "15 vids / wk"
+ },
+ {
+ "id": "sales-funnel",
+ "title": "Marketing Sales Funnel Automation",
+ "category": "n8n",
+ "tags": ["n8n", "CRM", "Email Cadence"],
+ "image": "assets/images/marketing-sales-funnel-CchYD7WT.png",
+ "desc": "Instant lead categorization, weighted agent distribution, and condition-based email cadences.",
+ "problem": "Unsorted leads slipped through cracks without structured email cadences.",
+ "solution": "Built condition-based branching in n8n for lead priority scoring and auto-assignment.",
+ "result": "Increased qualified lead conversion by 40%.",
+ "metrics": "+40% Conversion"
+ },
+ {
+ "id": "crm-sync",
+ "title": "HubSpot & Monday.com Sync Engine",
+ "category": "make",
+ "tags": ["Make", "HubSpot", "Monday.com"],
+ "image": "assets/images/make-crm-inbound-caller-DMUPuVre.png",
+ "desc": "Real-time webhook listener bridging lead creation in HubSpot directly to PM board in Monday.com.",
+ "problem": "HubSpot submissions were not mirrored onto Monday.com boards in real-time.",
+ "solution": "Architected Make scenario to catch form webhooks and populate boards with instant notifications.",
+ "result": "Achieved 100% real-time data sync with zero manual copy-paste.",
+ "metrics": "100% Live Sync"
+ },
+ {
+ "id": "data-capture",
+ "title": "AI Attachment Data Capture Pipeline",
+ "category": "make",
+ "tags": ["Make", "ChatGPT Models Vision", "Sheets"],
+ "image": "assets/images/make-user-existence-CRaRI7mI.png",
+ "desc": "Gmail attachment extractor analyzing PDF/receipt data with ChatGPT Models (OpenAI) into structured spreadsheet rows.",
+ "problem": "Extracting tabular financial data from email PDF attachments was time-consuming and error-prone.",
+ "solution": "Engineered a Gmail trigger running ChatGPT Models Vision to parse document values into Google Sheets.",
+ "result": "Saved 15+ hours weekly with 98% data accuracy.",
+ "metrics": "98% Accuracy"
+ },
+ {
+ "id": "closed-loop",
+ "title": "The 'Closed-Loop' Lead Conversion Engine",
+ "category": "zapier",
+ "tags": ["Zapier", "Apollo API", "Asana"],
+ "image": "assets/images/closed-loop-lead-conversion-1.png",
+ "desc": "Webhooks + Apollo API enrichment delivering instant multi-channel outreach in under 25 seconds.",
+ "problem": "Slow response times on form opt-ins resulted in high prospect drop-off.",
+ "solution": "Developed a Zapier webhook pipeline enriched via Apollo that triggers SMS & email in 25 seconds.",
+ "result": "Cut response time to under 25s and boosted conversions by 25%.",
+ "metrics": "<25s Response"
+ },
+ {
+ "id": "content-repurpose",
+ "title": "Autonomous Content Repurposing",
+ "category": "zapier",
+ "tags": ["Zapier", "Whisper AI", "Social APIs"],
+ "image": "assets/images/content-repurposing-v1.png",
+ "desc": "Audio/video transcript parser that generates multi-format social threads and newsletters.",
+ "problem": "Repurposing raw audio into articles and social copy required hours of manual drafting.",
+ "solution": "Built a Zapier pipeline running Whisper and LLMs to distribute to Facebook and Instagram.",
+ "result": "Cut content turn-around from 4 hours to 15 minutes.",
+ "metrics": "4h → 15min"
+ },
+ {
+ "id": "ghl-lead-magnet",
+ "title": "HighLevel Lead Magnet & Nurture",
+ "category": "ghl",
+ "tags": ["GoHighLevel", "SMS Logic", "Nurture"],
+ "image": "assets/images/ghl-lead-magnet.png",
+ "desc": "Conditional opt-in delivery with dynamic 48-hour follow-up triggers preventing lead drop-off.",
+ "problem": "Leads downloaded digital assets and ghosted before booking consultations.",
+ "solution": "Designed GHL workflow with conditional delay triggers for personalized check-ins.",
+ "result": "Maximized lead engagement and recovered cold downloads without manual effort.",
+ "metrics": "100% Nurture Rate"
+ },
+ {
+ "id": "ghl-reactivation",
+ "title": "Dormant Lead Reactivation System",
+ "category": "ghl",
+ "tags": ["GoHighLevel", "Re-engagement", "CRM"],
+ "image": "assets/images/ghl-reactivation.png",
+ "desc": "Automated identification of 60+ day inactive contacts with tailored multi-touch value drops.",
+ "problem": "Inactive CRM contacts remained unmonetized after initial campaign drop-off.",
+ "solution": "Created automated GHL trigger identifying 60-day cold contacts with high-value reactivation campaigns.",
+ "result": "Reactivated 25% of dormant contacts into booked sales calls.",
+ "metrics": "25% Reactivated"
+ },
+ {
+ "id": "ghl-reminder",
+ "title": "Smart Appointment Reminder System",
+ "category": "ghl",
+ "tags": ["GoHighLevel", "SMS / Voice", "Cal Sync"],
+ "image": "assets/images/ghl-appointment-reminder.png",
+ "desc": "Automated SMS, email, and voice reminders dispatched strategically at 48h, 24h, and 2h pre-call.",
+ "problem": "High no-show rates wasted sales reps' scheduled calendar slots.",
+ "solution": "Implemented automated multi-touch SMS, email, and voice confirmations at 48h, 24h, and 2h.",
+ "result": "Reduced appointment no-shows by 60%.",
+ "metrics": "-60% No-Shows"
+ },
+ {
+ "id": "ghl-pipeline",
+ "title": "End-to-End Sales Pipeline Engine",
+ "category": "ghl",
+ "tags": ["GoHighLevel", "Sales Ops", "Smart Tasks"],
+ "image": "assets/images/ghl-pipeline-sales.png",
+ "desc": "Opportunity stage automation triggering auto-tasks, rep assignments, and buyer persona tagging.",
+ "problem": "Disorganized deal stages caused bottlenecks in sales follow-up.",
+ "solution": "Engineered automated stage progression, rep task assignments, and conditional notifications.",
+ "result": "Boosted pipeline velocity by 50%.",
+ "metrics": "+50% Velocity"
+ }
+ ],
+ "experience": [
+ {
+ "period": "MARCH 2025 — PRESENT",
+ "company": "FREELANCE CLIENT WORK",
+ "role": "Automation Workflow Specialist",
+ "location": "Remote (US & Canadian Clients)",
+ "bullets": [
+ "Rebuilt outbound AI cold calling engine using Telnyx AI, Make.com, GoHighLevel, and Twilio, enabling sub-second objection handling across 34+ edge scenarios.",
+ "Architected 6-phase deployment roadmap encompassing knowledge base vectorization, CRM pipeline webhooks, automated SMS recovery loops, and live sales warm transfer.",
+ "Engineered automated lead enrichment pipelines with Firecrawl, Apollo API, and n8n, processing 500+ monthly prospects with 95% reduction in manual research.",
+ "Integrated GoHighLevel with secondary membership engines via Zapier, eliminating manual paper rosters and digitizing academy operations."
+ ]
+ },
+ {
+ "period": "AUG 2025 — AUG 2026 (1 YEAR)",
+ "company": "AiroLift™ (airolift.com)",
+ "role": "Shopify Customer Support & Operations Specialist",
+ "location": "Remote (US & Canada)",
+ "bullets": [
+ "Managed high-ticket store operations, customer inquiries, technical parts replacement orders, and B2B Draft Orders with custom freight and tax calculations for industrial lifting systems.",
+ "Connected Shopify with Gorgias and carrier APIs (17Track, R+L Carriers, FreightQuote) via Make/n8n webhooks, saving 10+ hours/week in manual lookups.",
+ "Engineered an automated WISMO tracking webhook pipeline synchronizing LTL freight scans into customer notes with proactive notifications.",
+ "Resolved 70-90+ daily tickets across Live Chat and Email with a < 3-minute First Response Time and 98.5% CSAT score while keeping chargebacks under 0.3%."
+ ]
+ },
+ {
+ "period": "AUG 2024 — NOV 2025",
+ "company": "IBEX",
+ "role": "Process Trainer (Operations & Tech Lead)",
+ "location": "Davao City",
+ "bullets": [
+ "Led technical launch for a premier US retail client, onboarding agent cohorts onto complex CRM and billing architecture.",
+ "Created automated real-time KPI tracking dashboards in Google Workspace monitoring performance across 85+ active agents.",
+ "Translated technical procedures into visual decision trees and standard operating procedures (SOPs), accelerating team ramp-up time."
+ ]
+ },
+ {
+ "period": "AUG 2023 — JULY 2024",
+ "company": "IBEX",
+ "role": "Billing SME & Escalations Mentor",
+ "location": "Davao City",
+ "bullets": [
+ "Primary escalation lead for Salesforce troubleshooting, system diagnostics, and customer dispute resolution.",
+ "Drafted system documentation and troubleshooting playbooks that lowered mean time to resolution for financial anomalies."
+ ]
+ }
+ ],
+ "tech_stack": [
+ {"name": "Telnyx AI & VAPI", "tier": "VOICE ENGINE", "desc": "Outbound telephony, prompt engineering, objection trees, function calling for live CRM transfers."},
+ {"name": "n8n Self-Hosted", "tier": "ORCHESTRATION", "desc": "Complex logic branches, webhook triggers, persistent state, vector store connections."},
+ {"name": "Make.com", "tier": "AUTOMATION", "desc": "Multi-scenario architecture, data mapping, API error handlers, routing arrays."},
+ {"name": "GoHighLevel (GHL)", "tier": "CRM / OPS", "desc": "Pipeline automation, custom field schema, SMS/Voice workflows, booking engine."},
+ {"name": "Firecrawl API", "tier": "DATA EXTRACTION", "desc": "Markdown scraping, LLM-ready structured extraction, company domain intelligence."},
+ {"name": "Apollo API", "tier": "ENRICHMENT", "desc": "B2B buyer persona match, verified emails/phones, company revenue tiering."},
+ {"name": "ChatGPT Models & OpenAI", "tier": "LLM INFERENCE", "desc": "Structured JSON outputs, document embeddings, multimodal attachment analysis."},
+ {"name": "Twilio Telephony", "tier": "SIP / TRUNKING", "desc": "Programmable voice numbers, SIP routing, SMS status callbacks, compliance recording."}
+ ]
+}
