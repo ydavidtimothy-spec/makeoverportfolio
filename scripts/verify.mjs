@@ -10,7 +10,18 @@ const ok = (cond, name) => { if (!cond) issues.push(name); return cond; };
 
 const html = readFileSync(join(root, "index.html"), "utf8");
 const text = html.replaceAll("&amp;", "&").replaceAll("&lt;", "<").replaceAll("&gt;", ">");
-const css = readFileSync(join(root, "styles.css"), "utf8") + readFileSync(join(root, "css/bits.css"), "utf8");
+const cssFiles = ["styles.css", "css/bits.css"];
+const cssParts = cssFiles.map((f) => readFileSync(join(root, f), "utf8"));
+const css = cssParts.join("\n");
+// 0. CSS syntax gate: balanced {} and () per file (comment-stripped)
+cssFiles.forEach((f, i) => {
+  const stripped = cssParts[i].replace(/\/\*[\s\S]*?\*\//g, "");
+  const opensBrace = (stripped.match(/\{/g) || []).length;
+  const closesBrace = (stripped.match(/\}/g) || []).length;
+  const opensParen = (stripped.match(/\(/g) || []).length;
+  const closesParen = (stripped.match(/\)/g) || []).length;
+  ok(opensBrace === closesBrace && opensParen === closesParen, `css-unbalanced:${f}`);
+});
 const data = JSON.parse(readFileSync(join(root, "data/yortechva-projects.json"), "utf8"));
 
 // 1. Every local asset reference resolves
